@@ -113,6 +113,7 @@ public class AnalisadorLexico {
         Token res = new Token("Op_rel", null);
         char current;
         char x;
+        int lido;
         String valor = "";
         bis.mark(2);
         current = (char) this.bis.read();
