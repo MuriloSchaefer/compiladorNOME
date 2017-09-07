@@ -1,5 +1,5 @@
 int #agoravai = 0;
-int=#agoravai;
+int #botofe = #agoravai;
 for(#agoravai = 0; #agoravai < 100; #agoravai = #agoravai + 1) {
  #botofe = #botofe * #agoravai;
 }

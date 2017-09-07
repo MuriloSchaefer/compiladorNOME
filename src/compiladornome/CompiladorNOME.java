@@ -8,7 +8,6 @@ package compiladornome;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,6 +37,7 @@ public class CompiladorNOME {
                   "and", "or", "not", "xor", "for", "while", "if", "else", "switch",
                   "case", "printf", "read", "true", "false");
             List<String> simbolos = Arrays.asList("{", "}", ")", "(", ";", "=", ":");
+            
             AnalisadorLexico anaLex = new AnalisadorLexico(file, pal_reservadas, simbolos);
             List<Token> tokens = anaLex.analisar();
             

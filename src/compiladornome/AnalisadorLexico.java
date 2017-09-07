@@ -11,7 +11,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,6 +23,7 @@ public class AnalisadorLexico {
     private BufferedInputStream bis = null;
     private List<String> pal_res = new ArrayList<>();
     private List<String> simbolos = new ArrayList<>();
+    private int l=0, c=0;
     
     public AnalisadorLexico(File file) throws FileNotFoundException, IOException{
         this.file = file;        
@@ -58,17 +58,19 @@ public class AnalisadorLexico {
         bis.mark(2);
         int lido = this.bis.read();
         current = (char) lido;
-        while(current == ' ' || current == '\n' ){
+        this.c++;
+        //ignora espaços e quebra de linha entre tokens
+        while(current == ' ' || current == '\n' && lido != -1){
             bis.mark(2);
             lido = this.bis.read();
             current = (char) lido;
+            if(current == '\n'){ this.l++; this.c=0;}else{this.c++;}
         }
         if(lido == -1){
             return res;
         }
         
         String letra = String.valueOf(current);
-        
         if(letra.matches("#")){
             res = reconheceId();
         }else if(letra.matches("[0-9]")){
