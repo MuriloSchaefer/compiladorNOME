@@ -30,6 +30,11 @@ public class Token {
         return valor;
     }
 
+    @Override
+    public String toString() {
+        return "(" + atributo + ", " + valor + ")\n";
+    }
+
     public void setValor(String valor) {
         this.valor = valor;
     }
