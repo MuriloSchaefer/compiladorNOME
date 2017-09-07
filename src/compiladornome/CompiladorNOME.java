@@ -39,17 +39,9 @@ public class CompiladorNOME {
                   "case", "printf", "read", "true", "false");
             List<String> simbolos = Arrays.asList("{", "}", ")", "(", ";", "=", ":");
             AnalisadorLexico anaLex = new AnalisadorLexico(file, pal_reservadas, simbolos);
-            List<Token> tokens = new ArrayList<>();
-            Token token = anaLex.reconhecePalavra();
+            List<Token> tokens = anaLex.analisar();
             
-            while(token != null && token.getValor() != null){
-                tokens.add(token);
-                token = anaLex.reconhecePalavra();
-            }
             System.out.println("tokens: "+tokens);
-            if(token != null){
-                System.out.println("Erro na leitura do token");
-            } 
         } catch (IOException e) {
             e.printStackTrace();
         }

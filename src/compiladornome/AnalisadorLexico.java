@@ -38,7 +38,21 @@ public class AnalisadorLexico {
         this.simbolos = simbolos;
     }
     
-    public Token reconhecePalavra() throws IOException{
+    public List<Token> analisar() throws IOException{
+        List<Token> tokens = new ArrayList<>();
+        Token token = reconhecePalavra();
+
+        while(token != null && token.getValor() != null){
+            tokens.add(token);
+            token = reconhecePalavra();
+        }
+        if(token != null){
+            System.out.println("Erro na leitura do token");
+        } 
+        return tokens;
+    }
+    
+    private Token reconhecePalavra() throws IOException{
         char current;
         Token res = null;
         bis.mark(2);
@@ -78,7 +92,7 @@ public class AnalisadorLexico {
         }
         return res;
     }
-    public Token reconheceSimbolo() throws IOException{
+    private Token reconheceSimbolo() throws IOException{
         Token res = new Token("Simb", null);
         char current;
         current = (char) this.bis.read();
@@ -87,7 +101,7 @@ public class AnalisadorLexico {
         return res;
     }
     
-    public Token reconheceOpAritmetico() throws IOException{
+    private Token reconheceOpAritmetico() throws IOException{
         Token res = new Token("Op_arit", null);
         char current;
         current = (char) this.bis.read();
@@ -95,7 +109,7 @@ public class AnalisadorLexico {
         return res;
     }
     
-    public Token reconheceOpRelacional() throws IOException{
+    private Token reconheceOpRelacional() throws IOException{
         Token res = new Token("Op_rel", null);
         char current;
         char x;
@@ -139,7 +153,7 @@ public class AnalisadorLexico {
         return res;
     }
     
-    public Token reconheceChar() throws IOException {
+    private Token reconheceChar() throws IOException {
         Token res = new Token("Char", null);
         
         String valor = "'";
@@ -162,7 +176,7 @@ public class AnalisadorLexico {
         return res;
     }
     
-    public Token reconhecePalavraReservada() throws IOException{
+    private Token reconhecePalavraReservada() throws IOException{
         Token res = new Token("Pal_res", null);
         
         String valor = "";
@@ -187,7 +201,7 @@ public class AnalisadorLexico {
         return res;
     }
     
-    public Token reconheceNumero() throws IOException{
+    private Token reconheceNumero() throws IOException{
         Token res = new Token("Num", null);
         
         String valor = "";
@@ -207,7 +221,7 @@ public class AnalisadorLexico {
         return res;
     }
     
-    public Token reconheceId() throws IOException{
+    private Token reconheceId() throws IOException{
         Token res = new Token("Id", null);
         String valor = "#";
         char current;
