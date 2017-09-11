@@ -3,9 +3,9 @@ int #botofe = #agoravai;
 for(#agoravai = 0; #agoravai < 100; #agoravai = #agoravai + 1) {
  #botofe = #botofe * #agoravai;
 }
-while(#agoravai >= 0) {
-    switch(#botofe){
+while(#agoravai == 0) {
+    switch(#boto fe){
         case true: printf('T');
-        case false: printf('F');
+        case false: @printf('@');
     }
 }

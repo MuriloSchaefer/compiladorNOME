@@ -8,8 +8,11 @@ package compiladornome;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import static java.lang.System.exit;
 import java.util.Arrays;
 import java.util.List;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
@@ -22,7 +25,18 @@ public class CompiladorNOME {
      */
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // TODO code application logic here
-        String filename = "/home/murilo/NetBeansProjects/CompiladorNOME/src/compiladornome/testes/teste1.txt";
+        String filename = "";
+        JFileChooser chooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter(
+            "NOME files", "nome");
+        chooser.setFileFilter(filter);
+        int returnVal = chooser.showOpenDialog(chooser);
+        if(returnVal == JFileChooser.APPROVE_OPTION) {
+           filename = chooser.getSelectedFile().getPath();
+        } else{
+            System.out.println("Nenhum arquivo fonte selecionado");
+            exit(1);
+        }
         File file = new File(filename);
         if (!file.exists()) {
           System.out.println(filename + " does not exist.");

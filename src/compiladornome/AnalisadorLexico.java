@@ -23,7 +23,7 @@ public class AnalisadorLexico {
     private BufferedInputStream bis = null;
     private List<String> pal_res = new ArrayList<>();
     private List<String> simbolos = new ArrayList<>();
-    private int l=0, c=0;
+    private int l=1, c=0;
     
     public AnalisadorLexico(File file) throws FileNotFoundException, IOException{
         this.file = file;        
@@ -42,7 +42,7 @@ public class AnalisadorLexico {
         List<Token> tokens = new ArrayList<>();
         Token token = reconhecePalavra();
 
-        while(token != null && token.getValor() != null){
+        while(token != null){
             tokens.add(token);
             token = reconhecePalavra();
         }
@@ -52,21 +52,36 @@ public class AnalisadorLexico {
         return tokens;
     }
     
-    private Token reconhecePalavra() throws IOException{
-        char current;
-        Token res = null;
+    private char lerChar() throws IOException{
         bis.mark(2);
         int lido = this.bis.read();
-        current = (char) lido;
+        char current = (char) lido;
         this.c++;
-        //ignora espaços e quebra de linha entre tokens
-        while(current == ' ' || current == '\n' && lido != -1){
+        
+        if(lido == -1){
+           return '\n';
+        }
+        while(current=='\n'){
+            this.c = 0;
+            this.l++;
+            
             bis.mark(2);
             lido = this.bis.read();
             current = (char) lido;
-            if(current == '\n'){ this.l++; this.c=0;}else{this.c++;}
         }
-        if(lido == -1){
+        return current;        
+    }
+    
+    private Token reconhecePalavra() throws IOException{
+        Token res = null;
+        
+        char current = lerChar();
+        
+        //ignora espaços e quebra de linha entre tokens
+        while(current == ' ' && current != '\n'){
+            current = lerChar();
+        }
+        if(current == '\n'){
             return res;
         }
         
@@ -75,79 +90,82 @@ public class AnalisadorLexico {
             res = reconheceId();
         }else if(letra.matches("[0-9]")){
             bis.reset();
+            this.c--;
             res = reconheceNumero();
         }else if(letra.matches("[a-z]")){
             bis.reset();
+            this.c--;
             res = reconhecePalavraReservada();
         }else if(letra.matches("'")){
             res = reconheceChar();
         }else if(current == '+' || current == '-' || current == '/' || current == '*' ){
             bis.reset();
+            this.c--;
             res = reconheceOpAritmetico();
         }else if(current == '<' || current == '>' || current == '=' || current == '!' ){
             bis.reset();
+            this.c--;
             res = reconheceOpRelacional();
         }
         else {
             bis.reset();
+            this.c--;
             res = reconheceSimbolo();
         }
         return res;
     }
     private Token reconheceSimbolo() throws IOException{
-        Token res = new Token("Simb", null);
-        char current;
-        current = (char) this.bis.read();
-        if(this.simbolos.contains(String.valueOf(current))) 
-            res.setValor(String.valueOf(current));
+        Token res = new Token("Simb", null, this.c, this.l);
+        char current = lerChar();
+        res.setValor(String.valueOf(current));
+        if(!this.simbolos.contains(String.valueOf(current))) 
+            res.setErro("Simbolo não pertencente ao alfabeto");
         return res;
     }
     
     private Token reconheceOpAritmetico() throws IOException{
-        Token res = new Token("Op_arit", null);
-        char current;
-        current = (char) this.bis.read();
+        Token res = new Token("Op_arit", null, this.c, this.l);
+        char current = lerChar();
         res.setValor(String.valueOf(current));
         return res;
     }
     
     private Token reconheceOpRelacional() throws IOException{
-        Token res = new Token("Op_rel", null);
-        char current;
+        Token res = new Token("Op_rel", null, this.c, this.l);
         char x;
         int lido;
         String valor = "";
-        bis.mark(2);
-        current = (char) this.bis.read();
+        char current = lerChar();
         switch(current){
             case '>':   valor += "G";
-                        bis.mark(2);
-                        x = (char) this.bis.read();
+                        x = lerChar();
                         if(x == '='){
                             valor += "E";
                         }else{
                             bis.reset();
+                            this.c--;
                         } break;
                 
             case '<':   valor += "L";
-                        bis.mark(2);
-                        x = (char) this.bis.read();
+                        x = lerChar();
                         if(x == '='){
                             valor += "E";
                         }else{
                             bis.reset();
+                            this.c--;
                         } break;
             case '=':   valor += "E";
                         x = (char) this.bis.read();
                         if(!(x == '=')){
                             bis.reset();
+                            this.c-=2;
                             return reconheceSimbolo();
                         } break;
             case '!':   valor += "D";
-                        bis.mark(2);
-                        x = (char) this.bis.read();
+                        x = lerChar();
                         if(!(x == '=')){
                             bis.reset();
+                            this.c--;
                             valor = null;
                         } break;
             default: valor = null;
@@ -157,22 +175,26 @@ public class AnalisadorLexico {
     }
     
     private Token reconheceChar() throws IOException {
-        Token res = new Token("Char", null);
+        Token res = new Token("Char", null, this.c, this.l);
         
         String valor = "'";
         char current;
         int fim = 0;
         int i=0;
         while (this.bis.available() > 0 && fim != 1) {
-          current = (char) this.bis.read();
+          current = lerChar();
           if(!String.valueOf(current).matches("'"))
               valor += current;
           else
               fim=1;
           i++;
         }
+        if(this.bis.available() == 0){
+            res.setErro("Não foi encontrado o fechamento do char");
+        }
         if(valor.length()!=2){
             //erro de tamanho de char
+            res.setErro("Char deve conter apenas um caracter");
         }else{
             res.setValor(valor+"'");
         }
@@ -180,15 +202,14 @@ public class AnalisadorLexico {
     }
     
     private Token reconhecePalavraReservada() throws IOException{
-        Token res = new Token("Pal_res", null);
+        Token res = new Token("Pal_res", null, this.c, this.l);
         
         String valor = "";
         char current;
         int fim = 0;
         int i=0;
         while (this.bis.available() > 0 && fim != 1) {
-          bis.mark(2);
-          current = (char) this.bis.read();
+          current = lerChar();
           if(String.valueOf(current).matches("[a-z]"))
               valor += current;
           else
@@ -199,40 +220,41 @@ public class AnalisadorLexico {
             res.setValor(valor);
         }else{
             //erro palavra_reservada não encontrada
+            res.setErro("Palavra reservada não encontrada");
         }
         bis.reset();
+        this.c--;
         return res;
     }
     
     private Token reconheceNumero() throws IOException{
-        Token res = new Token("Num", null);
+        Token res = new Token("Num", null, this.c, this.l);
         
         String valor = "";
         char current;
         int fim = 0;
         int i=0;
         while (this.bis.available() > 0 && fim != 1) {
-          bis.mark(2);
-          current = (char) this.bis.read();
+          current = lerChar();
           if(String.valueOf(current).matches("[0-9]"))
               valor += current;
           else
               fim=1;
         }
         bis.reset();
+        this.c--;
         res.setValor(valor);
         return res;
     }
     
     private Token reconheceId() throws IOException{
-        Token res = new Token("Id", null);
+        Token res = new Token("Id", null, this.c, this.l);
         String valor = "#";
         char current;
         int fim = 0;
         int i=0;
         while (this.bis.available() > 0 && fim != 1) {
-          bis.mark(2);
-          current = (char) this.bis.read();
+          current = lerChar();
           if ((current >= 65 && current <= 90) || (current >= 97 && current <= 122)
                   || (i!=0 && current == '_')){
               valor += current; 
@@ -242,10 +264,12 @@ public class AnalisadorLexico {
           i++;
         }
         bis.reset();
+        this.c--;
         if(valor.length()>1)
             res.setValor(valor);
         else{
             //tratar erro de reconhecimento de id
+            res.setErro("O identificador é nulo");
         }
         return res;
     }
