@@ -117,6 +117,7 @@ public class AnalisadorLexico {
     private Token reconheceSimbolo() throws IOException{
         Token res = new Token("Simb", null, this.c, this.l);
         char current = lerChar();
+        res.setAtributo(String.valueOf(current));
         res.setValor(String.valueOf(current));
         if(!this.simbolos.contains(String.valueOf(current))) 
             res.setErro("Simbolo não pertencente ao alfabeto");
@@ -127,6 +128,7 @@ public class AnalisadorLexico {
         Token res = new Token("Op_arit", null, this.c, this.l);
         char current = lerChar();
         res.setValor(String.valueOf(current));
+        res.setAtributo(String.valueOf(current));
         return res;
     }
     
@@ -171,11 +173,12 @@ public class AnalisadorLexico {
             default: valor = null;
         }
         res.setValor(valor);
+        res.setAtributo(valor);
         return res;
     }
     
     private Token reconheceChar() throws IOException {
-        Token res = new Token("Char", null, this.c, this.l);
+        Token res = new Token("char", null, this.c, this.l);
         
         String valor = "'";
         char current;
@@ -217,6 +220,7 @@ public class AnalisadorLexico {
         }
         //Validar se esta entre o conjunto de pal_res
         if(this.pal_res.contains(valor)){
+            res.setAtributo(valor);
             res.setValor(valor);
         }else{
             //erro palavra_reservada não encontrada
@@ -228,7 +232,7 @@ public class AnalisadorLexico {
     }
     
     private Token reconheceNumero() throws IOException{
-        Token res = new Token("Num", null, this.c, this.l);
+        Token res = new Token("num", null, this.c, this.l);
         
         String valor = "";
         char current;
@@ -248,7 +252,7 @@ public class AnalisadorLexico {
     }
     
     private Token reconheceId() throws IOException{
-        Token res = new Token("Id", null, this.c, this.l);
+        Token res = new Token("id", null, this.c, this.l);
         String valor = "#";
         char current;
         int fim = 0;

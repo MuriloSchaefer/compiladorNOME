@@ -38,12 +38,12 @@ public class Token {
     public String toString() {
         String res = "";
         if(this.erro == ""){
-            return "(" + atributo + ", " + valor + ")\n";
+            return "[" + atributo + ", " + valor + "]";
         } else {
            if(this.valor!=null){
-            return "(" + atributo + ", " + this.erro + ", Char: '" + this.valor +"', linha: "+ this.l + ", coluna: "+ this.c +")\n"; 
+            return "[" + atributo + ", " + this.erro + ", Char: '" + this.valor +"', linha: "+ this.l + ", coluna: "+ this.c +"]"; 
            }
-           return "(" + atributo + ", " + this.erro + ", linha: "+ this.l + ", coluna: "+ this.c +")\n"; 
+           return "[" + atributo + ", " + this.erro + ", linha: "+ this.l + ", coluna: "+ this.c +"]"; 
         }
     }
 

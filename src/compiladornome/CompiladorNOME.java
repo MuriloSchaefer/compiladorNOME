@@ -5,9 +5,12 @@
  */
 package compiladornome;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import static java.lang.System.exit;
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +29,7 @@ public class CompiladorNOME {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // TODO code application logic here
         String filename = "";
-        JFileChooser chooser = new JFileChooser();
+        /*JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter(
             "NOME files", "nome");
         chooser.setFileFilter(filter);
@@ -36,7 +39,12 @@ public class CompiladorNOME {
         } else{
             System.out.println("Nenhum arquivo fonte selecionado");
             exit(1);
-        }
+        }*/
+        filename = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/teste1.nome";
+        String filenameTokens = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/tokens";
+        String csvTable = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/tabelaLR.csv";
+        String csvProd = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/producoes.csv";
+        
         File file = new File(filename);
         if (!file.exists()) {
           System.out.println(filename + " does not exist.");
@@ -56,9 +64,28 @@ public class CompiladorNOME {
             List<Token> tokens = anaLex.analisar();
             
             System.out.println("tokens: "+tokens);
+            //exportarTokens(filenameTokens, tokens);
+            AnalisadorSintatico anaSin = new AnalisadorSintatico(csvTable, csvProd);
+            //System.out.println("teste: "+ anaSin.cellValue(14, "id", true));
+            System.out.println(anaSin.analisar(tokens));
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    public static void exportarTokens(String filename, List<Token> tokens){
+        try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(filename, true))))   {
+            int len = tokens.size();
+            for(int i = 0; i<len; i++){
+                out.print(tokens.get(i));
+                if(i != len -1){
+                    out.print(";");
+                }
+            }
+         }catch (IOException e) {
+            System.out.println(e);
+         }
     }
     
 }
