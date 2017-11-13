@@ -119,7 +119,8 @@ public class AnalisadorLexico {
         char current = lerChar();
         res.setAtributo(String.valueOf(current));
         res.setValor(String.valueOf(current));
-        if(!this.simbolos.contains(String.valueOf(current))) 
+        
+        if(!this.simbolos.contains(String.valueOf(current)) && current != '"') 
             res.setErro("Simbolo não pertencente ao alfabeto");
         return res;
     }
@@ -139,31 +140,31 @@ public class AnalisadorLexico {
         String valor = "";
         char current = lerChar();
         switch(current){
-            case '>':   valor += "G";
+            case '>':   valor += ">";
                         x = lerChar();
                         if(x == '='){
-                            valor += "E";
+                            valor += "=";
                         }else{
                             bis.reset();
                             this.c--;
                         } break;
                 
-            case '<':   valor += "L";
+            case '<':   valor += "<";
                         x = lerChar();
                         if(x == '='){
-                            valor += "E";
+                            valor += "=";
                         }else{
                             bis.reset();
                             this.c--;
                         } break;
-            case '=':   valor += "E";
+            case '=':   valor += "==";
                         x = (char) this.bis.read();
                         if(!(x == '=')){
                             bis.reset();
                             this.c-=2;
                             return reconheceSimbolo();
                         } break;
-            case '!':   valor += "D";
+            case '!':   valor += "!=";
                         x = lerChar();
                         if(!(x == '=')){
                             bis.reset();

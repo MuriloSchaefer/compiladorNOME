@@ -40,10 +40,10 @@ public class CompiladorNOME {
             System.out.println("Nenhum arquivo fonte selecionado");
             exit(1);
         }*/
-        filename = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/teste1.nome";
-        String filenameTokens = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/tokens";
-        String csvTable = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/tabelaLR.csv";
-        String csvProd = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/CompiladorNOME/src/compiladornome/testes/producoes.csv";
+        filename = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/compiladorNOME/src/compiladornome/testes/teste1.nome";
+        String filenameTokens = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/compiladorNOME/src/compiladornome/testes/tokens";
+        String csvTable = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/compiladorNOME/src/compiladornome/testes/tabelaLR.csv";
+        String csvProd = "/home/schaefer/Área de trabalho/Unioeste/4 ano/comp/compiladorNOME/src/compiladornome/testes/producoes.csv";
         
         File file = new File(filename);
         if (!file.exists()) {
@@ -57,7 +57,7 @@ public class CompiladorNOME {
         try {
             List<String> pal_reservadas = Arrays.asList("int", "bool", "char", 
                   "and", "or", "not", "xor", "for", "while", "if", "else", "switch",
-                  "case", "printf", "read", "true", "false");
+                  "case", "printf", "read", "true", "false", "break");
             List<String> simbolos = Arrays.asList("{", "}", ")", "(", ";", "=", ":");
             
             AnalisadorLexico anaLex = new AnalisadorLexico(file, pal_reservadas, simbolos);
