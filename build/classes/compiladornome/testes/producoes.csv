@@ -1,0 +1,64 @@
+id,A,prod,len
+0,<program>,<inst>,1
+1,<inst>,<if><inst>,2
+2,<inst>,<while><inst>,2
+3,<inst>,<for><inst>,2
+4,<inst>,<switch><inst>,2
+5,<inst>,<declaration><inst>,2
+6,<inst>,<id> <atrib><inst>,3
+7,<inst>,<read><inst>,2
+8,<inst>,<print><inst>,2
+9,<inst>,lambda,1
+10,<declaration>,<tipo> <id> <declaration2>,3
+11,<declaration2>,<atrib>,1
+12,<declaration2>,';',1
+13,<atrib>,'=' <atrib2>,2
+14,<atrib2>,<char> ';',2
+15,<atrib2>,<expr> ';',2
+16,<tipo>,int,1
+17,<tipo>,char,1
+18,<tipo>,bool,1
+19,<expr>,<unaria>,1
+20,<expr>,<termo> <binaria>,2
+21,<binaria>,<op> <termo>,2
+22,<binaria>,lambda,1
+23,<unaria>,not id,2
+24,<unaria>, - <unaria_term>,2
+25,<unaria_term>,id,1
+26,<unaria_term>,num,1
+27,<termo>,(' <expr> ')',3
+28,<termo>,id,1
+29,<termo>,num,1
+30,<op>,<op_log>,1
+31,<op>,<op_rel>,1
+32,<op>,<op_arit>,1
+33,<op_log>,or,1
+34,<op_log>,xor,1
+35,<op_log>,and,1
+36,<op_rel>,<,1
+37,<op_rel>,>,1
+38,<op_rel>,<=,1
+39,<op_rel>,>=,1
+40,<op_rel>,==,1
+41,<op_rel>,!=,1
+42,<op_arit>,+,1
+43,<op_arit>,-,1
+44,<op_arit>,*,1
+45,<op_arit>,/,1
+46,<if>,if '(' <expr> ')' '{' <inst> '}' <else>,8
+47,<else>,else '{' <inst> '}',4
+48,<else>,lambda,1
+49,<switch>,switch '(' <id> ')' '{' <case> 'break' ';' <case_loop>,9
+50,<caseloop>,<case> 'break' ';' <caseloop>,4
+51,<caseloop>,'}',1
+52,<case>,case '(' <case2>,3
+53,<case2>,<id> ')' ':' <inst>,4
+54,<case2>,<num> ')' ':' <inst>,4
+55,<case2>,<char> ')' ':' <inst>,4
+56,<for>,for '(' <id> <atrib> <expr> ';' <id> <atrib> ')' '{' <inst> '}',12
+57,<while>,while '(' <expr> ')' '{' <inst> '}',7
+58,<print>,"printf '(' "" <print2> "" ')' ';'",7
+59,<print2>,id,1
+60,<print2>,num,1
+61,<print2>,char,1
+62,<read>,read '(' ')' ';',4
