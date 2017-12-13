@@ -49,6 +49,7 @@ public class AnalisadorLexico {
         if(token != null){
             System.out.println("Erro na leitura do token");
         } 
+        tokens.add(new Token("$", "lambda", c, l));
         return tokens;
     }
     

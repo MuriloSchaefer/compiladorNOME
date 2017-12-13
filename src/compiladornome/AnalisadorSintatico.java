@@ -31,8 +31,11 @@ public class AnalisadorSintatico {
     String[] cabecalhoProducoes = null;
     List<String[]> producoes = null;
     Stack<String> pilha = null;
+    
     List<Integer> lambda_inst = null;
     List<Integer> lambda_if = null;
+    
+    String codigoIntermediario = "";
     
     public AnalisadorSintatico(String csvTable, String csvProd) throws IOException {
         MyLogger.setup();
@@ -45,13 +48,12 @@ public class AnalisadorSintatico {
         LOGGER.finest("Pilha foi inicializada");
         pushInt(0);
         LOGGER.finest("Adicionado o estado inicial na pilha"); 
-        this.lambda_inst = Arrays.asList(3, 59,39,4,6,27,10,111, 112, 114, 125,142,123,107, 88, 9,106);
+        this.lambda_inst = Arrays.asList(3,7, 59,39,4,6,27,10,111,55,53, 141, 5, 112, 114, 125,142,123,107, 88, 9,106);
         this.lambda_if = Arrays.asList(106);
     }
     
-    public boolean analisar(List<Token> tokens){
+    public String analisar(List<Token> tokens){
         int i = 0;
-        tokens.add(new Token("$", "lambda", 0, 0));
         LOGGER.info("Inicializando Analise");
         while(i < tokens.size()){
             
@@ -113,12 +115,30 @@ public class AnalisadorSintatico {
             //------------------------------------
             
             LOGGER.info("Token lido: "+ a);
-            String celula = cellValue(s, a, true);
-            LOGGER.info("Valor na celula ["+ s + ", "+ a+"]: "+ celula);
-            String[] parser = parserCell(celula);
+            String celula = null;
+            String[] parser = null;
+            String saida = null;
+            try{
+                celula = cellValue(s, a, true);
+                LOGGER.info("Valor na celula ["+ s + ", "+ a+"]: "+ celula);
+                parser = parserCell(celula);
+            } catch(ArrayIndexOutOfBoundsException e){
+                
+            }
             if(parser == null){
                 LOGGER.warning("Parser nulo, chegamos em um estado de erro.");
-                return false;
+                
+                List<String> expectedValues = this.findExpected(s, true);
+                if(a.equals("$")){
+                    saida = "Chegamos ao final do seu arquivo e não encontramos um dos valores a seguir: " + expectedValues.toString();
+                }else {
+                    saida = "Erro na linha " + tokens.get(i).getL() + " e coluna " + (tokens.get(i).getC()+1);
+                    saida += " valor lido: " + a + " quando se esperava um dos valores: ";
+                    saida += expectedValues.toString();
+                }
+                
+                //buscar valores esperados.
+                return saida;
             }
             if (parser[0].equals("E")){
                 LOGGER.info("Empilhando "+ a + " e " + parser[1]);
@@ -129,6 +149,10 @@ public class AnalisadorSintatico {
                     i++;
                 }
             } else if(parser[0].equals("R")){
+                //REALIZA AS AÇÕES SEMANTICAS ----------------------------------------
+                
+                // -------------------------------------------------------------------       
+                
                 LOGGER.info("Reduzindo pela produção " + parser[1]);
                 String cell = cellValue(Integer.valueOf(parser[1]), "len", false);
                 LOGGER.finest("tamanho da produção lida: " + cell);
@@ -151,14 +175,14 @@ public class AnalisadorSintatico {
                 LOGGER.info("Empilhando desvio: "+ desvio);
             } else if(parser[0].equals("a")) {
                 LOGGER.info("analise terminada, string aceita");
-                return true;
+                return "aceita";
             } else {
                 LOGGER.info("analise terminada, string recusada");
-                return false;
+                return "recusada";
             }
         }
         LOGGER.info("analise terminada, string recusada");
-        return false;
+        return "recusada";
     }
     
     public String[] parserCell(String celula){
@@ -218,7 +242,7 @@ public class AnalisadorSintatico {
         }
     }
     
-    public String cellValue(int state, String name, boolean isTable){
+    public String cellValue(int state, String name, boolean isTable) throws ArrayIndexOutOfBoundsException{
         int index = getIndexTable(name, isTable);
         if(index < 0 || state < 0)
             return null;
@@ -227,6 +251,17 @@ public class AnalisadorSintatico {
         } else {
             return this.producoes.get(state)[index];
         }
+    }
+    
+    public List<String> findExpected(int state, boolean isTable){
+        List<String> expectedValues = new ArrayList();
+        String[] vetor = this.tabela.get(state);
+        for(int i=1; i< vetor.length; i++){
+            if(vetor[i] != null && !this.cabecalhoTabela[i].equals("lambda")){
+                expectedValues.add(this.cabecalhoTabela[i]);
+            }
+        }
+        return expectedValues;
     }
     
     public String prodLog(String prod){
