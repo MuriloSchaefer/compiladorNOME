@@ -30,7 +30,8 @@ public class AnalisadorSintatico {
     List<String[]> tabela = null;
     String[] cabecalhoProducoes = null;
     List<String[]> producoes = null;
-    Stack<String> pilha = null;
+    //Stack<String> pilha = null;
+    Stack<Token> pilha = null;
     
     List<Integer> lambda_inst = null;
     List<Integer> lambda_if = null;
@@ -145,8 +146,9 @@ public class AnalisadorSintatico {
             }
             if (parser[0].equals("E")){
                 LOGGER.info("Empilhando "+ a + " e " + parser[1]);
-                this.pilha.push(a);
-                this.pilha.push(parser[1]);
+                this.pilha.push(tokens.get(i));
+                
+                this.pilha.push(new Token("", parser[1]));
                 LOGGER.finest(a + " e " + parser[1] + " empilhado com sucesso");
                 if((s != 43 && !this.lambda_inst.contains(s) && !this.lambda_if.contains(s)) || (!a.equals("lambda") && !a.equals("$"))){
                     i++;
@@ -164,9 +166,10 @@ public class AnalisadorSintatico {
                 int tamanho = 2 * Integer.valueOf(cell);
                 LOGGER.info("quantidade de elementos a serem desempilhados: "+ tamanho);
                 for(int j=0; j<tamanho; j++){
-                    String p = pilha.pop();
-                    //MODIFICAÇÔES PARA A SEMANTICA
-                    if(j%2 == 1 && tamanho == 2){
+                    Token p = pilha.pop();
+                    
+                    /*//MODIFICAÇÔES PARA A SEMANTICA
+                    if(j%2 == 1 && tamanho == 2){                        
                         if(prod.equals("<tipo>")){
                             TokenRegra auxTK = new TokenRegra ("tipo",p, p,tkRegra.size());
                             tkRegra.add(auxTK);
@@ -195,17 +198,18 @@ public class AnalisadorSintatico {
                             tkRegra.add(auxTK);
                         }
                     }else if(j%2 == 1 && tamanho > 2)
-                    //ACABA MODIFICAÇÔES PARA A SEMANTICA
+                    //ACABA MODIFICAÇÔES PARA A SEMANTICA*/
+                        
                     LOGGER.finest("desempilhando: "+ p);
                 }
                 int s1 = popInt();
                 pushInt(s1);
                 LOGGER.info("Topo da pilha: "+ s1);
-                this.pilha.push(prod);
+                this.pilha.push(new Token("nao_terminal", prod));
                 LOGGER.info("Empilhando produção: "+ prodLog(prod));
                 String desvio = cellValue(s1, prod, true);
                 LOGGER.info("Desvio["+ s1+", "+prodLog(prod)+"]: "+ desvio);
-                this.pilha.push(desvio);
+                this.pilha.push(new Token("", desvio));
                 LOGGER.info("Empilhando desvio: "+ desvio);
             } else if(parser[0].equals("a")) {
                 LOGGER.info("analise terminada, string aceita");
@@ -233,14 +237,16 @@ public class AnalisadorSintatico {
     
     public int popInt(){
         LOGGER.finest("desempilhando valor inteiro");
-        int value = Integer.valueOf(pilha.pop());
+        Token aux = pilha.pop();
+        int value = Integer.valueOf(aux.getValor());
         LOGGER.finest("valor inteiro desempilhado: "+ value);
         return value;
     }
     
     public void pushInt(int value){
+        Token aux = new Token("", String.valueOf(value));
         LOGGER.finest("empilhando valor inteiro");
-        pilha.push(String.valueOf(value));
+        pilha.push(aux);
         LOGGER.finest("valor inteiro empilhado: "+ value);
     }
     
