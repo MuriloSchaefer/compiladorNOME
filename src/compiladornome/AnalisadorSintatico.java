@@ -52,7 +52,7 @@ public class AnalisadorSintatico {
         LOGGER.finest("Pilha foi inicializada");
         pushInt(0);
         LOGGER.finest("Adicionado o estado inicial na pilha"); 
-        this.lambda_inst = Arrays.asList(3,7, 59, 54,39,4,6,27,10,111,55,53, 141, 5, 112, 114, 125,142,123,107, 88, 9,106);
+        this.lambda_inst = Arrays.asList(3,7,58, 59, 54,39,4,6,27,10,111,55,53, 141, 5, 112, 114, 125,142,123,107, 88, 9,106);
         this.lambda_if = Arrays.asList(106);
     }
     
@@ -181,7 +181,7 @@ public class AnalisadorSintatico {
                 Token t_prod = new Token("nao_terminal", prod);
                 
                 //--- listinha -----
-                Token t_expr, t_tipo, t_id, t_decl2, t_decl, t_inst, t_aux, t_termo, t_binaria;
+                Token t_expr,t_char, t_tipo, t_id, t_decl2, t_decl, t_inst, t_aux, t_termo, t_binaria,t_op;
                 
                 switch(Integer.valueOf(parser[1])){
                     case 0:
@@ -233,6 +233,11 @@ public class AnalisadorSintatico {
                         t_prod.setCodigo(" := " +t_expr.getCodigo());
                         t_prod.setTipo(t_expr.getTipo());
                         break;
+                    case 14: 
+                        t_char = pilha_aux.pop();
+                        t_prod.setTipo("char");
+                        t_prod.setCodigo(t_char.getValor());
+                        break;
                     case 15: 
                         t_expr = pilha_aux.pop();
                         t_prod.setTipo(t_expr.getTipo());
@@ -242,6 +247,21 @@ public class AnalisadorSintatico {
                         Token aux = pilha_aux.pop();
                         t_prod.setCodigo(aux.getValor());
                         t_prod.setTipo(aux.getValor()); // onde esta o tipo
+                        break;
+                    case 17:
+                        t_tipo = pilha_aux.pop();
+                        t_prod.setTipo("char");
+                        t_prod.setCodigo(t_tipo.getValor());
+                        break;
+                    case 18:
+                        t_tipo = pilha_aux.pop();
+                        t_prod.setTipo("bool");
+                        t_prod.setCodigo(t_tipo.getValor());
+                        break;
+                    case 19: 
+                        t_termo = pilha_aux.pop();
+                        t_prod.setCodigo(t_termo.getCodigo());
+                        t_prod.setTipo(t_termo.getTipo());
                         break;
                     case 20: 
                         t_termo = pilha_aux.pop();
@@ -255,12 +275,59 @@ public class AnalisadorSintatico {
                                             " e "+t_binaria.getTipo();
                         }
                         t_prod.setTipo(t_termo.getTipo());
-                        t_prod.setCodigo(t_termo.getCodigo() + t_binaria.getCodigo());
+                        t_prod.setCodigo(t_termo.getCodigo()+ " " + t_binaria.getCodigo());
+                        break;
+                    case 21:
+                        t_op = pilha_aux.pop();
+                        t_termo = pilha_aux.pop();
+                        
+                        t_prod.setCodigo(t_op.getCodigo() + " "+ t_termo.getCodigo());
                         break;
                     case 22: break;
+                    case 23: 
+                        t_termo = pilha_aux.pop();
+                        t_termo = pilha_aux.pop();
+                        if(!tabela_simbolos.contains(t_termo.getValor())){
+                            LOGGER.severe("Variável "+t_termo.getValor()+" não foi declarada.");
+                            return "Variável "+t_termo.getValor()+" não foi declarada.";
+                        }
+                        if(!t_termo.getTipo().equals("bool")){
+                          LOGGER.severe("Não é possível atribuir o tipo "+ t_termo.getTipo()+ " a uma variável do tipo bool");  
+                          return "Não é possível atribuir o tipo "+ t_termo.getTipo()+ " a uma variável do tipo bool";
+                        }
+                        break;
+                    case 24: 
+                        t_termo = pilha_aux.pop();
+                        t_termo = pilha_aux.pop();
+                        t_prod.setTipo(t_termo.getTipo());
+                        t_prod.setCodigo("- "+t_termo.getCodigo());
+                        break;
+                    case 26: 
+                        t_termo = pilha_aux.pop();
+                        t_prod.setCodigo(t_termo.getValor());
+                        t_prod.setTipo("int");
+                        break;
                     case 29: 
                         t_prod.setTipo("int");
                         t_prod.setCodigo(pilha_aux.pop().getValor());
+                        break;
+                    case 31: 
+                        t_op = pilha_aux.pop();
+                        t_prod.setCodigo(t_op.getCodigo());
+                        t_prod.setTipo(t_op.getTipo());
+                        break;
+                    case 32:
+                        t_op = pilha_aux.pop();
+                        t_prod.setCodigo(t_op.getCodigo());
+                        break;
+                    case 36: 
+                        t_op = pilha_aux.pop();
+                        t_prod.setCodigo("<");
+                        t_prod.setTipo("bool");
+                        break;
+                    case 42: 
+                        t_op = pilha_aux.pop();
+                        t_prod.setCodigo(t_op.getValor());
                         break;
                     case 62: break;
                     default: LOGGER.severe("nao entendi o que vc escreveu, você escreve de uma maneira burra cara. Que loucura"); return "deu pau"; 

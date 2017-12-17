@@ -1,1 +1,3 @@
-int #agoravai=5;
+int #naofoi;
+bool #b = 5 < 8;
+bool #a = not #b;

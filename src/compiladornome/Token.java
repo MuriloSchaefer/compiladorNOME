@@ -18,6 +18,7 @@ public class Token {
     // ATRIBUTOS PARA ANALISE SEMANTICA
     
     private String local = "";
+    private String operador = ""; // para tratar do caso de operações relacionais 
     private String codigo = "";
     private String verdadeiro = "";
     private String falso = "";
@@ -167,6 +168,14 @@ public class Token {
 
     public void setFim(String fim) {
         this.fim = fim;
+    }
+
+    public String getOperador() {
+        return operador;
+    }
+
+    public void setOperador(String operador) {
+        this.operador = operador;
     }
     
     
