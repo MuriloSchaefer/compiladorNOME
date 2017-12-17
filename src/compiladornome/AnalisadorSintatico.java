@@ -19,6 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import compiladornome.MyLogger;
 import java.util.Arrays;
+import java.util.Hashtable;
 
 /**
  *
@@ -38,7 +39,7 @@ public class AnalisadorSintatico {
     
     String codigoIntermediario = "";
     
-    List<TokenRegra> tkRegra = new ArrayList<TokenRegra>();
+    Hashtable<String, String> tabela_simbolos = new Hashtable<>();
         
     public AnalisadorSintatico(String csvTable, String csvProd) throws IOException {
         MyLogger.setup();
@@ -51,7 +52,7 @@ public class AnalisadorSintatico {
         LOGGER.finest("Pilha foi inicializada");
         pushInt(0);
         LOGGER.finest("Adicionado o estado inicial na pilha"); 
-        this.lambda_inst = Arrays.asList(3,7, 59,39,4,6,27,10,111,55,53, 141, 5, 112, 114, 125,142,123,107, 88, 9,106);
+        this.lambda_inst = Arrays.asList(3,7, 59, 54,39,4,6,27,10,111,55,53, 141, 5, 112, 114, 125,142,123,107, 88, 9,106);
         this.lambda_if = Arrays.asList(106);
     }
     
@@ -165,48 +166,120 @@ public class AnalisadorSintatico {
                 LOGGER.info("Tamanho da produção "+ prodLog(prod) + " "+ parser[1] + ": " + cell);
                 int tamanho = 2 * Integer.valueOf(cell);
                 LOGGER.info("quantidade de elementos a serem desempilhados: "+ tamanho);
+                Stack<Token> pilha_aux = new Stack<>();
+                Token p;
                 for(int j=0; j<tamanho; j++){
-                    Token p = pilha.pop();
-                    
-                    /*//MODIFICAÇÔES PARA A SEMANTICA
-                    if(j%2 == 1 && tamanho == 2){                        
-                        if(prod.equals("<tipo>")){
-                            TokenRegra auxTK = new TokenRegra ("tipo",p, p,tkRegra.size());
-                            tkRegra.add(auxTK);
-                        } else if(prod.equals("<op_log>")){
-                            TokenRegra auxTK = new TokenRegra ("op_log",p, p,tkRegra.size());
-                            tkRegra.add(auxTK);
-                        } else if(prod.equals("<op_rel>")){
-                            TokenRegra auxTK = new TokenRegra ("op_rel",p, p, tkRegra.size()); 
-                            tkRegra.add(auxTK);
-                        } else if(prod.equals("<op_arit>")){
-                            TokenRegra auxTK = new TokenRegra ("op_arit",p,p,tkRegra.size());
-                            tkRegra.add(auxTK);
-                        } else if(prod.equals("<termo>")){
-                            TokenRegra auxTK = new TokenRegra ("termo",p,p,tkRegra.size());
-                            tkRegra.add(auxTK);
-                        } else if(prod.equals("<unaria_termo>")){
-                            TokenRegra auxTK = new TokenRegra ("unaria_termo",p,p,tkRegra.size());
-                            tkRegra.add(auxTK);
-                        } else if(prod.equals("<unaria_termo>")){
-                            TokenRegra auxTK = new TokenRegra ("print2",p,p,tkRegra.size());
-                            tkRegra.add(auxTK);
-                        } else if(prod.equals("<program>")){
-                            TokenRegra auxTK2 = tkRegra.remove(tkRegra.size() - 1);
-                            TokenRegra auxTK = new TokenRegra ("program",auxTK2.getTipo(),"",tkRegra.size());
-                            auxTK.concatenarCodigo(auxTK2.getCodigo());
-                            tkRegra.add(auxTK);
-                        }
-                    }else if(j%2 == 1 && tamanho > 2)
-                    //ACABA MODIFICAÇÔES PARA A SEMANTICA*/
-                        
+                    p = pilha.pop();  
+                    if(j%2==1)
+                       pilha_aux.push(p);
                     LOGGER.finest("desempilhando: "+ p);
                 }
+                LOGGER.finest("tamanho pilha auxiliar: "+ pilha_aux.size());
+                
+                LOGGER.info("pilha aux: "+ prodLog(pilha_aux.toString()));
+                /* ANALISE SEMANTICA */
+                Token t_prod = new Token("nao_terminal", prod);
+                
+                //--- listinha -----
+                Token t_expr, t_tipo, t_id, t_decl2, t_decl, t_inst, t_aux, t_termo, t_binaria;
+                
+                switch(Integer.valueOf(parser[1])){
+                    case 0:
+                        t_inst = pilha_aux.pop();
+                        return "Codigo intermediario gerado com sucesso: ESTOU IMPRESSIONANTE\n"+t_inst.getCodigo();
+                    case 5: 
+                        t_decl = pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        t_prod.setCodigo(t_decl.getCodigo()+"\n"+t_inst.getCodigo());
+                        break;
+                    case 9:break;
+                    case 10:
+                        t_tipo = pilha_aux.pop();
+                        t_id = pilha_aux.pop();
+                        Token token_decl2 = pilha_aux.pop();
+                        
+                        if(token_decl2.getTipo().equals("")){
+                            if(tabela_simbolos.contains(t_id.getValor())){
+                                LOGGER.severe(t_id.getValor() + " já existe na tabela de simbolos");
+                                return t_id.getValor() + " já existe na tabela de simbolos";
+                            }else {
+                                t_prod.setTipo(t_tipo.getTipo());
+                                tabela_simbolos.put(t_id.getValor(), t_tipo.getTipo());
+                                LOGGER.info(t_id.getValor() + " adicionado na tabela de simbolos");
+                            }
+                            
+                        }else{
+                            if(!token_decl2.getTipo().equals(t_tipo.getTipo())){
+                                LOGGER.severe("foi tentado atribuir um valor "+ token_decl2.getTipo()+" para uma variavel do tipo "+ t_tipo.getTipo());
+                                return "foi tentado atribuir um valor "+ token_decl2.getTipo()+" para uma variavel do tipo "+ t_tipo.getTipo();
+                            }else{
+                                t_prod.setTipo(t_tipo.getTipo());
+                                tabela_simbolos.put(t_id.getValor(), t_tipo.getTipo());
+                                LOGGER.info(t_id.getValor() + " adicionado na tabela de simbolos");
+                            }
+                            t_prod.setCodigo(t_id.getValor()+token_decl2.getCodigo());
+                            
+                        }
+                        break;
+                    case 11: 
+                        t_decl2 = pilha_aux.pop();
+                        t_prod.setCodigo(t_decl2.getCodigo());
+                        t_prod.setTipo(t_decl2.getTipo());
+                        break;
+                    case 12: break;
+                    case 13: 
+                        t_expr = pilha_aux.pop();
+                        t_expr = pilha_aux.pop();
+                        t_prod.setCodigo(" := " +t_expr.getCodigo());
+                        t_prod.setTipo(t_expr.getTipo());
+                        break;
+                    case 15: 
+                        t_expr = pilha_aux.pop();
+                        t_prod.setTipo(t_expr.getTipo());
+                        t_prod.setCodigo(t_expr.getCodigo());
+                        break;
+                    case 16: 
+                        Token aux = pilha_aux.pop();
+                        t_prod.setCodigo(aux.getValor());
+                        t_prod.setTipo(aux.getValor()); // onde esta o tipo
+                        break;
+                    case 20: 
+                        t_termo = pilha_aux.pop();
+                        t_binaria = pilha_aux.pop();
+                        if(!t_binaria.getTipo().equals("") && !t_termo.getTipo().equals(t_binaria.getTipo())){
+                            LOGGER.severe("os tipos da expressão '"+ t_termo.getValor() + t_binaria.getCodigo() +
+                                            "' não são compativeis! NÃO é possível operar "+t_termo.getValor() + 
+                                            " e "+t_binaria.getTipo());
+                            return "os tipos da expressão '"+ t_termo.getValor() + t_binaria.getCodigo() +
+                                            "' não são compativeis! NÃO é possível operar "+t_termo.getValor() + 
+                                            " e "+t_binaria.getTipo();
+                        }
+                        t_prod.setTipo(t_termo.getTipo());
+                        t_prod.setCodigo(t_termo.getCodigo() + t_binaria.getCodigo());
+                        break;
+                    case 22: break;
+                    case 29: 
+                        t_prod.setTipo("int");
+                        t_prod.setCodigo(pilha_aux.pop().getValor());
+                        break;
+                    case 62: break;
+                    default: LOGGER.severe("nao entendi o que vc escreveu, você escreve de uma maneira burra cara. Que loucura"); return "deu pau"; 
+                }
+                /* ANALISE SEMANTICA */
+                
                 int s1 = popInt();
                 pushInt(s1);
                 LOGGER.info("Topo da pilha: "+ s1);
-                this.pilha.push(new Token("nao_terminal", prod));
-                LOGGER.info("Empilhando produção: "+ prodLog(prod));
+                this.pilha.push(t_prod);
+                LOGGER.info("Empilhando produção "+ prodLog(t_prod.getValor())+": ");
+                LOGGER.info("<span style=\"margin-left:2em\"> <b>Local: </b>" + t_prod.getLocal());
+                LOGGER.info("<span style=\"margin-left:2em\"> <b>Tipo: </b>" + t_prod.getTipo());
+                LOGGER.info("<span style=\"margin-left:2em\"> <b>codigo: </b>" + t_prod.getCodigo());
+                LOGGER.info("<span style=\"margin-left:2em\"> <b>verdadeiro: </b>" + t_prod.getVerdadeiro());
+                LOGGER.info("<span style=\"margin-left:2em\"> <b>falso: </b>" + t_prod.getFalso());
+                LOGGER.info("<span style=\"margin-left:2em\"> <b>inicio: </b>" + t_prod.getInicio());
+                LOGGER.info("<span style=\"margin-left:2em\"> <b>fim: </b>" + t_prod.getFim());
+                
                 String desvio = cellValue(s1, prod, true);
                 LOGGER.info("Desvio["+ s1+", "+prodLog(prod)+"]: "+ desvio);
                 this.pilha.push(new Token("", desvio));
