@@ -37,6 +37,8 @@ public class AnalisadorSintatico {
     
     String codigoIntermediario = "";
     
+    List<TokenRegra> tkRegra = new ArrayList<TokenRegra>();
+        
     public AnalisadorSintatico(String csvTable, String csvProd) throws IOException {
         MyLogger.setup();
         LOGGER.setLevel(Level.INFO);
@@ -53,6 +55,7 @@ public class AnalisadorSintatico {
     }
     
     public String analisar(List<Token> tokens){
+        
         int i = 0;
         LOGGER.info("Inicializando Analise");
         while(i < tokens.size()){
@@ -149,9 +152,9 @@ public class AnalisadorSintatico {
                     i++;
                 }
             } else if(parser[0].equals("R")){
-                //REALIZA AS AÇÕES SEMANTICAS ----------------------------------------
-                
-                // -------------------------------------------------------------------       
+                /*REALIZA AS AÇÕES SEMANTICAS ----------------------------------------
+                    No for abaixo esto realizando modificações para tentar tratar os valores semanticos;
+                 ------------------------------------------------------------------- */      
                 
                 LOGGER.info("Reduzindo pela produção " + parser[1]);
                 String cell = cellValue(Integer.valueOf(parser[1]), "len", false);
@@ -162,6 +165,37 @@ public class AnalisadorSintatico {
                 LOGGER.info("quantidade de elementos a serem desempilhados: "+ tamanho);
                 for(int j=0; j<tamanho; j++){
                     String p = pilha.pop();
+                    //MODIFICAÇÔES PARA A SEMANTICA
+                    if(j%2 == 1 && tamanho == 2){
+                        if(prod.equals("<tipo>")){
+                            TokenRegra auxTK = new TokenRegra ("tipo",p, p,tkRegra.size());
+                            tkRegra.add(auxTK);
+                        } else if(prod.equals("<op_log>")){
+                            TokenRegra auxTK = new TokenRegra ("op_log",p, p,tkRegra.size());
+                            tkRegra.add(auxTK);
+                        } else if(prod.equals("<op_rel>")){
+                            TokenRegra auxTK = new TokenRegra ("op_rel",p, p, tkRegra.size()); 
+                            tkRegra.add(auxTK);
+                        } else if(prod.equals("<op_arit>")){
+                            TokenRegra auxTK = new TokenRegra ("op_arit",p,p,tkRegra.size());
+                            tkRegra.add(auxTK);
+                        } else if(prod.equals("<termo>")){
+                            TokenRegra auxTK = new TokenRegra ("termo",p,p,tkRegra.size());
+                            tkRegra.add(auxTK);
+                        } else if(prod.equals("<unaria_termo>")){
+                            TokenRegra auxTK = new TokenRegra ("unaria_termo",p,p,tkRegra.size());
+                            tkRegra.add(auxTK);
+                        } else if(prod.equals("<unaria_termo>")){
+                            TokenRegra auxTK = new TokenRegra ("print2",p,p,tkRegra.size());
+                            tkRegra.add(auxTK);
+                        } else if(prod.equals("<program>")){
+                            TokenRegra auxTK2 = tkRegra.remove(tkRegra.size() - 1);
+                            TokenRegra auxTK = new TokenRegra ("program",auxTK2.getTipo(),"",tkRegra.size());
+                            auxTK.concatenarCodigo(auxTK2.getCodigo());
+                            tkRegra.add(auxTK);
+                        }
+                    }else if(j%2 == 1 && tamanho > 2)
+                    //ACABA MODIFICAÇÔES PARA A SEMANTICA
                     LOGGER.finest("desempilhando: "+ p);
                 }
                 int s1 = popInt();
