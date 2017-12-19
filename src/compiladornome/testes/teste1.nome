@@ -1,3 +1,15 @@
 int #naofoi;
 bool #b = (5 < 8) and (5 < 4);
-bool #a = not #b;
+while(5 < 8){
+   #naofoi = 0;
+} 
+if(6>8){
+    #naofoi = 1;
+}else{
+    #naofoi=2;
+}
+int #h = #naofoi;
+
+for(#naofoi = 0; #naofoi < 100; #naofoi = #naofoi + 1;) {
+ #naofoi = #naofoi * #naofoi;
+}

@@ -128,6 +128,7 @@ public class AnalisadorSintatico {
                     case("id"): break;
                     case("read"): break;
                     case("printf"): break;
+                    case("else"): break;
                     case(")"): break;
                     default: a = "lambda"; break;
                 }
@@ -196,12 +197,27 @@ public class AnalisadorSintatico {
                 Token t_prod = new Token("nao_terminal", prod);
                 
                 //--- listinha -----
-                Token t_read, t_expr,t_atrib,t_char,t_tipo, t_id, t_decl2,t_print, t_decl, t_inst, t_aux, t_termo, t_binaria,t_op, t_print2;
-                
+                Token t_read,t_for, t_if, t_while,t_else, t_expr,t_atrib,t_char,t_tipo, t_id, t_decl2,t_print, t_decl, t_inst, t_aux, t_termo, t_binaria,t_op, t_print2;
+                String codigo;
                 switch(Integer.valueOf(parser[1])){
                     case 0:
                         t_inst = pilha_aux.pop();
                         return "Codigo intermediario gerado com sucesso: ESTOU IMPRESSIONANTE\n"+t_inst.getCodigo();
+                    case 1:
+                        t_if = pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        t_prod.setCodigo(t_if.getCodigo() + "\n"+ t_inst.getCodigo());
+                        break;
+                    case 2:
+                        t_while = pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        t_prod.setCodigo(t_while.getCodigo() + "\n"+ t_inst.getCodigo());
+                        break;
+                    case 3:
+                        t_for = pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        t_prod.setCodigo(t_for.getCodigo() + "\n"+ t_inst.getCodigo());
+                        break;
                     case 5: 
                         t_decl = pilha_aux.pop();
                         t_inst = pilha_aux.pop();
@@ -211,7 +227,13 @@ public class AnalisadorSintatico {
                         t_id = pilha_aux.pop();
                         t_atrib = pilha_aux.pop();
                         t_inst = pilha_aux.pop();
-                        t_prod.setCodigo(t_id.getValor() + t_atrib.getCodigo() + "\n"+t_inst.getCodigo());
+                        
+                        if(!t_atrib.getLocal().equals("")){
+                            t_prod.setCodigo(t_atrib.getCodigo()+"\n"+t_id.getValor()+" := "+ t_atrib.getLocal() + "\n"+t_inst.getCodigo());
+                        } else {
+                            t_prod.setCodigo(t_id.getValor() + t_atrib.getCodigo() + "\n"+t_inst.getCodigo());
+                        }
+                        
                         break;
                     case 7:
                         t_read = pilha_aux.pop();
@@ -339,7 +361,7 @@ public class AnalisadorSintatico {
                         }
                         //tratamento de tipos
                         t_prod.setLocal(this.getTempCounter());
-                        String codigo = t_prod.getLocal() + " : = ";
+                        codigo = t_prod.getLocal() + " : = ";
                         
                         if(t_termo.getLocal().equals(""))
                             codigo += t_termo.getCodigo();
@@ -417,7 +439,6 @@ public class AnalisadorSintatico {
                             return "Variável "+t_id.getValor()+" não foi declarada.";
                         }
                         t_prod.setCodigo(t_id.getValor());
-                        t_prod.setLocal(t_id.getValor());
                         
                         break;
                     case 29: 
@@ -520,22 +541,105 @@ public class AnalisadorSintatico {
                         t_prod.setTipo("int");
                         t_prod.setOperador(t_op.getValor());
                         break;
-//                    case 57:
-//                        pilha_aux.pop();
-//                        pilha_aux.pop();
-//                        t_expr = pilha_aux.pop();
-//                        pilha_aux.pop();
-//                        pilha_aux.pop();
-//                        t_inst = pilha_aux.pop();
-//                        
-//                        if(!t_expr.getTipo().equals("bool")){
-//                            LOGGER.severe("Não é possivel fazer um laço com uma expressão condicional que não seja booleana");
-//                            return "Não é possivel fazer um laço com uma expressão condicional que não seja booleana";
-//                        }
-//                        t_prod.setInicio(this.getLabelCounter());
-//                        t_prod.setFim(this.getLabelCounter());
-//                        t_prod.setCodigo(t_prod.getInicio() + ":\n" + this.getTempCounter()+ " := " + t_expr.getCodigo() + "\n" + "if " + );
-//                        break;
+                    case 46:
+                        pilha_aux.pop();
+                        pilha_aux.pop();
+                        t_expr = pilha_aux.pop();
+                        pilha_aux.pop();
+                        pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        pilha_aux.pop();
+                        t_else = pilha_aux.pop();
+                        
+                        if(!t_expr.getTipo().equals("bool")){
+                            LOGGER.severe("Condicional necessita de uma expressão booleana");
+                            return "Condicional necessita de uma expressão booleana";
+                        }
+                        t_prod.setVerdadeiro(this.getLabelCounter());
+                        t_prod.setFalso(this.getLabelCounter());
+                        String str_aux = this.getLabelCounter();
+                        codigo = t_expr.getCodigo() + "\n";
+                        codigo += "if " + t_expr.getLocal() + " = false goto " + t_prod.getFalso()+"\n";
+                        codigo += t_inst.getCodigo() + "\n";
+                        codigo += "goto " + str_aux + "\n";
+                        codigo += t_prod.getFalso() + " : \n";
+                        codigo += t_else.getCodigo() + "\n";
+                        codigo += str_aux + " : \n";
+                        t_prod.setCodigo(codigo);
+                        break;
+                    case 47:
+                        pilha_aux.pop();
+                        pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        t_prod.setCodigo(t_inst.getCodigo());
+                        break;
+                    case 48:break;
+                    case 56: 
+                        pilha_aux.pop();
+                        pilha_aux.pop();
+                        Token t_id1 = pilha_aux.pop();
+                        Token t_atrib1 = pilha_aux.pop();
+                        t_expr = pilha_aux.pop();
+                        pilha_aux.pop();
+                        Token t_id2 = pilha_aux.pop();
+                        Token t_atrib2 = pilha_aux.pop();
+                        pilha_aux.pop();
+                        pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        
+                        /*if(!t_id1.getTipo().equals("int") || !t_id2.getTipo().equals("int")){
+                            LOGGER.severe("O "+t_id1.getValor()+ " e "+ t_id2.getValor()+" precisam ser inteiros para controle do laço de repetição");
+                            return "O "+t_id1.getValor()+ " e "+ t_id2.getValor()+" precisam ser inteiros para controle do laço de repetição";
+                        }*/
+                        if(!t_atrib1.getTipo().equals("int") || !t_atrib2.getTipo().equals("int")){
+                            LOGGER.severe("As atribuições para "+ t_id1.getValor() + " e "+ t_id2.getValor()+" precisam ser inteiras");
+                            return "As atribuições para "+ t_id1.getValor() + " e "+ t_id2.getValor()+" precisam ser inteiras";
+                        }
+                        if(!t_expr.getTipo().equals("bool")){
+                            LOGGER.severe("A expressão para controle do laço de repetição precisa ter retorno booleano");
+                            return "A expressão para controle do laço de repetição precisa ter retorno booleano";
+                        }
+                        
+                        if(!t_atrib1.getLocal().equals("")){
+                            codigo = t_atrib1.getCodigo()+"\n"+t_id1.getValor()+" := "+ t_atrib1.getLocal() + "\n";
+                        } else {
+                            codigo = t_id1.getValor() + t_atrib1.getCodigo() + "\n";
+                        }
+                        
+                        t_prod.setInicio(this.getLabelCounter());
+                        t_prod.setFim(this.getLabelCounter());
+                        codigo += t_prod.getInicio() + " : \n";
+                        codigo += t_expr.getCodigo() + "\n";
+                        codigo += "if " + t_expr.getLocal() + " = false goto " + t_prod.getFim() + "\n";
+                        codigo += t_inst.getCodigo();
+                        if(!t_atrib2.getLocal().equals("")){
+                            codigo += t_atrib2.getCodigo()+"\n"+t_id2.getValor()+" := "+ t_atrib2.getLocal() + "\n";
+                        } else {
+                            codigo += t_id2.getValor() + t_atrib2.getCodigo() + "\n";
+                        }
+                        codigo += "goto "+ t_prod.getInicio() + "\n";
+                        codigo += t_prod.getFim() + ": \n";
+                        t_prod.setCodigo(codigo);
+                        break;
+                    case 57:
+                        t_expr = pilha_aux.pop();
+                        t_expr = pilha_aux.pop();
+                        t_expr = pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        t_inst = pilha_aux.pop();
+                        if(!t_expr.getTipo().equals("bool")){
+                            LOGGER.severe("A condicional de laço necessita de uma expressão booleana");
+                            return "A condicional de laço necessita de uma expressão booleana";
+                        }
+                        t_prod.setInicio(this.getLabelCounter());
+                        t_prod.setFim(this.getLabelCounter());
+                        codigo = t_prod.getInicio() + " : \n";
+                        codigo += t_expr.getCodigo() + "\n";
+                        codigo += "if " + t_expr.getLocal() + " = false goto "+ t_prod.getFim() + "\n";
+                        codigo += t_inst.getCodigo() + "\n"+ "goto "+ t_prod.getInicio() + "\n" + t_prod.getFim()+" : ";
+                        t_prod.setCodigo(codigo);
+                        break;
                     case 58:
                         t_print2 = pilha_aux.pop();
                         t_print2 = pilha_aux.pop();
