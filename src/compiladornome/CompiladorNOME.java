@@ -63,7 +63,7 @@ public class CompiladorNOME {
             AnalisadorLexico anaLex = new AnalisadorLexico(file, pal_reservadas, simbolos);
             List<Token> tokens = anaLex.analisar();
             
-            System.out.println("tokens: "+tokens);
+            //System.out.println("tokens: "+tokens);
             //exportarTokens(filenameTokens, tokens);
             AnalisadorSintatico anaSin = new AnalisadorSintatico(csvTable, csvProd);
             //System.out.println("teste: "+ anaSin.cellValue(14, "id", true));

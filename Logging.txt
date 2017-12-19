@@ -1,668 +1,1907 @@
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico readCSV
+dez 18, 2017 11:14:53 PM compiladornome.AnalisadorSintatico readCSV
 INFORMAÇÕES: Arquivo /home/schaefer/Área de trabalho/Unioeste/4 ano/comp/Antigos/compiladorNOME/src/compiladornome/testes/tabelaLR.csv aberto com sucesso
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico readCSV
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico readCSV
 INFORMAÇÕES: Arquivo /home/schaefer/Área de trabalho/Unioeste/4 ano/comp/Antigos/compiladorNOME/src/compiladornome/testes/producoes.csv aberto com sucesso
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Inicializando Analise
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 0</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 0
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [0, int]: E19
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando int e 19
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 1</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [int, int], [, 19]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 19
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: id
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [19, id]: R16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;tipo&gt; 16: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[int, int]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 0
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;tipo&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[0, &lt;tipo&gt;]: 16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 1</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;tipo&gt;], [, 16]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: id
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [16, id]: E35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando id e 35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 2</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #naofoi], [, 35]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: ;
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [35, ;]: E55
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando ; e 55
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 3</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #naofoi], [, 35], [;, ;], [, 55]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 55
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [55, bool]: R12
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 12
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;declaration2&gt; 12: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[;, ;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;declaration2&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[35, &lt;declaration2&gt;]: 53
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 53
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 3</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #naofoi], [, 35], [nao_terminal, &lt;declaration2&gt;], [, 53]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 53
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [53, bool]: R10
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 10
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;declaration&gt; 10: 3
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 6
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;declaration2&gt;], [id, #naofoi], [nao_terminal, &lt;tipo&gt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: #naofoi adicionado na tabela de simbolos
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 0
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;declaration&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[0, &lt;declaration&gt;]: 7
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 7
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 3</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 7
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [7, bool]: E21
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando bool e 21
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 4</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [bool, bool], [, 21]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 21
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: id
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [21, id]: R18
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 18
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;tipo&gt; 18: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[bool, bool]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 7
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;tipo&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[7, &lt;tipo&gt;]: 16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 4</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 16
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: id
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [16, id]: E35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando id e 35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 5</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: =
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [35, =]: E28
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando = e 28
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 6</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 28
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: num
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [28, num]: E48
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando num e 48
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: (
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [28, (]: E46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando ( e 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 7</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [num, 5], [, 48]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: num
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [46, num]: E48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando num e 48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 8</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [num, 5], [, 48]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 48
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: <
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [48, <]: R29
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 29
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;termo&gt; 29: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[num, 5]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 28
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;termo&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>5
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Desvio[28, &lt;termo&gt;]: 43
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[46, &lt;termo&gt;]: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 43
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 7</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 8</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 43
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: <
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [43, <]: E69
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando < e 69
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 8</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [&lt;, &lt;], [, 69]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 9</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [&lt;, &lt;], [, 69]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 69
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: num
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [69, num]: R36
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 36
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;op_rel&gt; 36: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[&lt;, &lt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 43
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;op_rel&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b><
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[43, &lt;op_rel&gt;]: 64
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 64
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 8</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op_rel&gt;], [, 64]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 9</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op_rel&gt;], [, 64]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 64
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: num
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [64, num]: R31
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 31
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;op&gt; 31: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;op_rel&gt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 43
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;op&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b><
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[43, &lt;op&gt;]: 61
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 61
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 8</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 9</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 61
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Token lido: num
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Valor na celula [61, num]: E48
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando num e 48
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 9</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [num, 8], [, 48]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 10</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [num, 8], [, 48]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 48
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: ;
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [48, ;]: R29
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [48, )]: R29
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 29
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;termo&gt; 29: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[num, 8]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 61
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;termo&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>8
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[61, &lt;termo&gt;]: 93
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 93
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 9</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [nao_terminal, &lt;termo&gt;], [, 93]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 10</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [nao_terminal, &lt;termo&gt;], [, 93]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 93
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: ;
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [93, ;]: R21
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [93, )]: R21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 21
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;binaria&gt; 21: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;termo&gt;], [nao_terminal, &lt;op&gt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 43
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;binaria&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>< 8
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>8
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Desvio[43, &lt;binaria&gt;]: 60
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando desvio: 60
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 9</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;binaria&gt;], [, 60]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 10</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;binaria&gt;], [, 60]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Topo da pilha: 60
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: ;
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [60, ;]: R20
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [60, )]: R20
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Reduzindo pela produção 20
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Tamanho da produção &lt;expr&gt; 20: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;binaria&gt;], [nao_terminal, &lt;termo&gt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 28
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: Empilhando produção &lt;expr&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>5 < 8
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T1 : = 5 &lt; 8
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Desvio[28, &lt;expr&gt;]: 41
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando desvio: 41
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 9</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;expr&gt;], [, 41]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 41
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: ;
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [41, ;]: E59
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando ; e 59
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[46, &lt;expr&gt;]: 83
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 83
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: <b>Verificando token 10</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;expr&gt;], [, 41], [;, ;], [, 59]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 59
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [59, bool]: R15
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Reduzindo pela produção 15
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Tamanho da produção &lt;atrib2&gt; 15: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: pilha aux: [[;, ;], [nao_terminal, &lt;expr&gt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 28
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando produção &lt;atrib2&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>5 < 8
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Desvio[28, &lt;atrib2&gt;]: 39
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando desvio: 39
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 10</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;atrib2&gt;], [, 39]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 39
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [39, bool]: R13
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Reduzindo pela produção 13
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Tamanho da produção &lt;atrib&gt; 13: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;atrib2&gt;], [=, =]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando produção &lt;atrib&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b> := 5 < 8
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Desvio[35, &lt;atrib&gt;]: 54
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando desvio: 54
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 10</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [nao_terminal, &lt;atrib&gt;], [, 54]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 54
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [54, bool]: R11
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Reduzindo pela produção 11
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Tamanho da produção &lt;declaration2&gt; 11: 1
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;atrib&gt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 35
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando produção &lt;declaration2&gt;: 
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b> := 5 < 8
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Desvio[35, &lt;declaration2&gt;]: 53
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Empilhando desvio: 53
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: <b>Verificando token 10</b>
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [nao_terminal, &lt;declaration2&gt;], [, 53]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Topo da pilha: 53
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Token lido: bool
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Valor na celula [53, bool]: R10
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Reduzindo pela produção 10
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-INFORMAÇÕES: Tamanho da produção &lt;declaration&gt; 10: 3
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;expr&gt;], [, 83]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 83
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [83, )]: E94
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando ) e 94
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 11</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [(, (], [, 46], [nao_terminal, &lt;expr&gt;], [, 83], [), )], [, 94]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 94
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: and
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [94, and]: R27
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 27
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;termo&gt; 27: 3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: quantidade de elementos a serem desempilhados: 6
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[), )], [nao_terminal, &lt;expr&gt;], [(, (]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;termo&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T1 : = 5 &lt; 8
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[28, &lt;termo&gt;]: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 11</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: and
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [43, and]: E68
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando and e 68
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 12</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [and, and], [, 68]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 68
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: (
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [68, (]: R35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;op_log&gt; 35: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[and, and]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;op_log&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>and
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>and
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[43, &lt;op_log&gt;]: 63
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 63
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 12</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op_log&gt;], [, 63]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 63
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: (
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [63, (]: R30
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 30
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;op&gt; 30: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;op_log&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;op&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>and
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>and
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[43, &lt;op&gt;]: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 12</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: (
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [61, (]: E46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando ( e 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 13</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: num
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [46, num]: E48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando num e 48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 14</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [num, 5], [, 48]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: <
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [48, <]: R29
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 29
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;termo&gt; 29: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[num, 5]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;termo&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>5
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[46, &lt;termo&gt;]: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 14</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: <
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [43, <]: E69
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando < e 69
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 15</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [&lt;, &lt;], [, 69]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 69
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: num
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [69, num]: R36
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 36
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;op_rel&gt; 36: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[&lt;, &lt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;op_rel&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[43, &lt;op_rel&gt;]: 64
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 64
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 15</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op_rel&gt;], [, 64]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 64
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: num
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [64, num]: R31
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 31
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;op&gt; 31: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;op_rel&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;op&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[43, &lt;op&gt;]: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 15</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: num
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [61, num]: E48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando num e 48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 16</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [num, 4], [, 48]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 48
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [48, )]: R29
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 29
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;termo&gt; 29: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[num, 4]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;termo&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[61, &lt;termo&gt;]: 93
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 93
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 16</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [nao_terminal, &lt;termo&gt;], [, 93]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 93
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [93, )]: R21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;binaria&gt; 21: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;termo&gt;], [nao_terminal, &lt;op&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;binaria&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>&lt;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>int
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[43, &lt;binaria&gt;]: 60
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 60
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 16</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;binaria&gt;], [, 60]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 60
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [60, )]: R20
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 20
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;expr&gt; 20: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;binaria&gt;], [nao_terminal, &lt;termo&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 46
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;expr&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[46, &lt;expr&gt;]: 83
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 83
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 16</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;expr&gt;], [, 83]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 83
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: )
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [83, )]: E94
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando ) e 94
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 17</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [(, (], [, 46], [nao_terminal, &lt;expr&gt;], [, 83], [), )], [, 94]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 94
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: ;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [94, ;]: R27
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 27
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;termo&gt; 27: 3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 6
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[), )], [nao_terminal, &lt;expr&gt;], [(, (]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 61
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;termo&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[61, &lt;termo&gt;]: 93
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 93
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 17</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;op&gt;], [, 61], [nao_terminal, &lt;termo&gt;], [, 93]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 93
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: ;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [93, ;]: R21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;binaria&gt; 21: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;termo&gt;], [nao_terminal, &lt;op&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 43
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;binaria&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>and
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[43, &lt;binaria&gt;]: 60
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 60
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 17</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;termo&gt;], [, 43], [nao_terminal, &lt;binaria&gt;], [, 60]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 60
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: ;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [60, ;]: R20
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 20
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;expr&gt; 20: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;binaria&gt;], [nao_terminal, &lt;termo&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;expr&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+T1 : = 5 &lt; 8
+T3 := T1 and T2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[28, &lt;expr&gt;]: 41
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 41
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 17</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;expr&gt;], [, 41]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 41
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: ;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [41, ;]: E59
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando ; e 59
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 18</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;expr&gt;], [, 41], [;, ;], [, 59]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 59
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [59, bool]: R15
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 15
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;atrib2&gt; 15: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[;, ;], [nao_terminal, &lt;expr&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;atrib2&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+T1 : = 5 &lt; 8
+T3 := T1 and T2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[28, &lt;atrib2&gt;]: 39
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 39
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 18</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [=, =], [, 28], [nao_terminal, &lt;atrib2&gt;], [, 39]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 39
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [39, bool]: R13
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 13
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;atrib&gt; 13: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;atrib2&gt;], [=, =]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;atrib&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>=
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+T1 : = 5 &lt; 8
+T3 := T1 and T2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[35, &lt;atrib&gt;]: 54
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 54
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 18</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [nao_terminal, &lt;atrib&gt;], [, 54]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 54
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [54, bool]: R11
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 11
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;declaration2&gt; 11: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;atrib&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;declaration2&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>T3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+T1 : = 5 &lt; 8
+T3 := T1 and T2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[35, &lt;declaration2&gt;]: 53
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 53
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 18</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #b], [, 35], [nao_terminal, &lt;declaration2&gt;], [, 53]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 53
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [53, bool]: R10
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 10
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;declaration&gt; 10: 3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 6
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
 INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;declaration2&gt;], [id, #b], [nao_terminal, &lt;tipo&gt;]]
-dez 17, 2017 7:56:22 PM compiladornome.AnalisadorSintatico analisar
-GRAVE: foi tentado atribuir um valor int para uma variavel do tipo bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: #b adicionado na tabela de simbolos
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;declaration&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+T1 : = 5 &lt; 8
+T3 := T1 and T2
+#b := T3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[7, &lt;declaration&gt;]: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 18</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [7, bool]: E21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando bool e 21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 19</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [bool, bool], [, 21]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 21
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: id
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [21, id]: R18
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 18
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;tipo&gt; 18: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[bool, bool]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;tipo&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[7, &lt;tipo&gt;]: 16
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 16
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 19</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 16
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: id
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [16, id]: E35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando id e 35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 20</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: =
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [35, =]: E28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando = e 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 21</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [=, =], [, 28]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: not
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [28, not]: E44
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando not e 44
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 22</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [=, =], [, 28], [not, not], [, 44]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 44
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: id
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [44, id]: E79
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando id e 79
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 23</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [=, =], [, 28], [not, not], [, 44], [id, #b], [, 79]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 79
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: ;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [79, ;]: R23
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 23
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;unaria&gt; 23: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[id, #b], [not, not]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;unaria&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>not #b
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[28, &lt;unaria&gt;]: 42
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 42
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 23</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [=, =], [, 28], [nao_terminal, &lt;unaria&gt;], [, 42]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 42
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: ;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [42, ;]: R19
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 19
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;expr&gt; 19: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;unaria&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;expr&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>not #b
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[28, &lt;expr&gt;]: 41
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 41
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 23</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [=, =], [, 28], [nao_terminal, &lt;expr&gt;], [, 41]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 41
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: ;
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [41, ;]: E59
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando ; e 59
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [=, =], [, 28], [nao_terminal, &lt;expr&gt;], [, 41], [;, ;], [, 59]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 59
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: lambda
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [59, lambda]: R15
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 15
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;atrib2&gt; 15: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[;, ;], [nao_terminal, &lt;expr&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 28
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;atrib2&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>not #b
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[28, &lt;atrib2&gt;]: 39
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 39
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [=, =], [, 28], [nao_terminal, &lt;atrib2&gt;], [, 39]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 39
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: lambda
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [39, lambda]: R13
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 13
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;atrib&gt; 13: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;atrib2&gt;], [=, =]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;atrib&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>=
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>not #b
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[35, &lt;atrib&gt;]: 54
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 54
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [nao_terminal, &lt;atrib&gt;], [, 54]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 54
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: lambda
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [54, lambda]: R11
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 11
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;declaration2&gt; 11: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;atrib&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 35
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;declaration2&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>not #b
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[35, &lt;declaration2&gt;]: 53
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 53
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;tipo&gt;], [, 16], [id, #a], [, 35], [nao_terminal, &lt;declaration2&gt;], [, 53]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 53
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: lambda
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [53, lambda]: R10
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 10
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;declaration&gt; 10: 3
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 6
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;declaration2&gt;], [id, #a], [nao_terminal, &lt;tipo&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: #a adicionado na tabela de simbolos
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;declaration&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>bool
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>#a := not #b
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[7, &lt;declaration&gt;]: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: lambda
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [7, lambda]: E11
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando lambda e 11
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [$, lambda], [, 11]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 11
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: $
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [11, $]: R9
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 9
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;inst&gt; 9: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[$, lambda]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;inst&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[7, &lt;inst&gt;]: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;inst&gt;], [, 26]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: $
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [26, $]: R5
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 5
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;inst&gt; 5: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;inst&gt;], [nao_terminal, &lt;declaration&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;inst&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>#a := not #b
+
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[7, &lt;inst&gt;]: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;inst&gt;], [, 26]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: $
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [26, $]: R5
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 5
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;inst&gt; 5: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;inst&gt;], [nao_terminal, &lt;declaration&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 7
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;inst&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>T2 : = 5 &lt; 4
+T1 : = 5 &lt; 8
+T3 := T1 and T2
+#b := T3
+#a := not #b
+
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[7, &lt;inst&gt;]: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;declaration&gt;], [, 7], [nao_terminal, &lt;inst&gt;], [, 26]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 26
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: $
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [26, $]: R5
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 5
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;inst&gt; 5: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 4
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;inst&gt;], [nao_terminal, &lt;declaration&gt;]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 0
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando produção &lt;inst&gt;: 
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Local: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Operador: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>Tipo: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>codigo: </b>
+T2 : = 5 &lt; 4
+T1 : = 5 &lt; 8
+T3 := T1 and T2
+#b := T3
+#a := not #b
+
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>verdadeiro: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>falso: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>inicio: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <span style="margin-left:2em"> <b>fim: </b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Desvio[0, &lt;inst&gt;]: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Empilhando desvio: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: <b>Verificando token 24</b>
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Pilha: [[, 0], [nao_terminal, &lt;inst&gt;], [, 2]]
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Topo da pilha: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Token lido: $
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Valor na celula [2, $]: R0
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Reduzindo pela produção 0
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: Tamanho da produção &lt;program&gt; 0: 1
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: quantidade de elementos a serem desempilhados: 2
+dez 18, 2017 11:14:54 PM compiladornome.AnalisadorSintatico analisar
+INFORMAÇÕES: pilha aux: [[nao_terminal, &lt;inst&gt;]]
