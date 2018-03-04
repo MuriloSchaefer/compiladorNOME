@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/schaefer/Área%20de%20trabalho/Unioeste/4%20ano/comp/Antigos/compiladorNOME/src/compiladornome/testes/teste1.nome</file>
+            <file>file:/home/schaefer/Área%20de%20trabalho/Unioeste/4%20ano/comp/Antigos/compiladorNOME/src/compiladornome/AnalisadorSintatico.java</file>
+            <file>file:/home/schaefer/Área%20de%20trabalho/Unioeste/4%20ano/comp/Antigos/compiladorNOME/src/compiladornome/AnalisadorLexico.java</file>
+        </group>
     </open-files>
 </project-private>

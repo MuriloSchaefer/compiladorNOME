@@ -1,14 +1,15 @@
-int #agoravai;
-#agoravai = 5;
-int #botofe;
-#botofe = #agoravai;
+int #naofoi;
+bool #b = (5 < 8) and (5 < 4);
+while(5 < 8){
+   #naofoi = 0;
+} 
+if(6>8){
+    #naofoi = 1;
+}else{
+    #naofoi=2;
+}
+int #h = #naofoi;
 
-while(#agoravai == 0) {
-    int #b;
-}
-if(#amem == #agoravai){
-    read();
-}
-for(#agoravai = 0+1; #agoravai < 100; #agoravai = #agoravai + 1;) {
- #botofe = #botofe * #agoravai;
+for(#naofoi = 0; #naofoi < 100; #naofoi = #naofoi + 1;) {
+ #naofoi = #naofoi * #naofoi;
 }
